@@ -25,7 +25,7 @@
                         <div style="display: inline-flex; align-items: center;">
                             <img src="{{ secure_asset('icon_web/Logo_Masjid.png') }}" style="width: 50px;"
                                 alt="Madrasah DKMBKU Logo">
-                            <h3 class="card-title" style="margin-left: 10px;">Kartu Pendaftar</h3>
+                            <h4 class="card-title" style="margin-left: 10px;">Kartu Pendaftar Majlistalim</h4>
                         </div>
                     </div>
 
