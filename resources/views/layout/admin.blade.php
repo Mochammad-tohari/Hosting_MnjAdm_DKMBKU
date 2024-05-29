@@ -11,15 +11,16 @@
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     {{-- <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/plugins/fontawesome-free/css/all.min.css') }} ">
-    "secure_asset" untuk menjalankan di NGROK --}}
+    "secure_asset" untuk menampilkan laman secara full di NGROK
+    "ngrok http 8000" menjalankan di NGROK --}}
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="{{ asset('Tema_LTE/plugins/fontawesome-free/css/all.min.css') }} ">
+    <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/plugins/fontawesome-free/css/all.min.css') }} ">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="{{ asset('Tema_LTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }} ">
+    <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }} ">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('Tema_LTE/dist/css/adminlte.min.css') }} ">
+    <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/dist/css/adminlte.min.css') }} ">
     {{-- nav colour --}}
-    <link rel="stylesheet" href="{{ asset('public/Design/admin_layout.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('public/Design/admin_layout.css') }}">
     <!-- Web Icon (Favicon) -->
     <link rel="icon" type="image/x-icon" href="Tema_LTE/dist/img/Logo_Masjid.png">
 </head>
@@ -29,8 +30,8 @@
 
         <!-- Preloader Mengubah tampilan Loading -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__wobble" src="{{ asset('Tema_LTE/dist/img/Logo_Masjid.png') }} " alt="AdminLTELogo"
-                height="80" width="80">
+            <img class="animation__wobble" src="{{ secure_asset('Tema_LTE/dist/img/Logo_Masjid.png') }} "
+                alt="AdminLTELogo" height="80" width="80">
         </div>
 
         <!-- Navbar -->
@@ -72,7 +73,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo Mengubah Logo-->
             <a href="#" class="brand-link">
-                <img src="{{ asset('Tema_LTE/dist/img/Logo_Masjid.png') }}" alt="Logo_Masjid"
+                <img src="{{ secure_asset('Tema_LTE/dist/img/Logo_Masjid.png') }}" alt="Logo_Masjid"
                     class="brand-image img-circle elevation-3" style="opacity: .8" height="50" width="50">
                 <span class="brand-text font-weight-light">DKMBKU</span>
             </a>
@@ -82,7 +83,7 @@
                 <!-- Sidebar user panel (optional) Logo user-->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('Tema_LTE/dist/img/Logo_Manajemen_MBKU.png') }}"
+                        <img src="{{ secure_asset('Tema_LTE/dist/img/Logo_Manajemen_MBKU.png') }}"
                             class="img-circle elevation-2" alt="User Image" height="80" width="80">
                     </div>
                     <div class="info">
@@ -326,25 +327,25 @@
 
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
-    <script src="{{ asset('Tema_LTE/plugins/jquery/jquery.min.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/jquery/jquery.min.js') }} "></script>
     <!-- Bootstrap -->
-    <script src="{{ asset('Tema_LTE/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
     <!-- overlayScrollbars -->
-    <script src="{{ asset('Tema_LTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }} "></script>
     <!-- AdminLTE App -->
-    <script src="{{ asset('Tema_LTE/dist/js/adminlte.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/dist/js/adminlte.js') }} "></script>
 
     <!-- PAGE PLUGINS -->
     <!-- jQuery Mapael -->
-    <script src="{{ asset('Tema_LTE/plugins/jquery-mousewheel/jquery.mousewheel.js') }} "></script>
-    <script src="{{ asset('Tema_LTE/plugins/raphael/raphael.min.js') }} "></script>
-    <script src="{{ asset('Tema_LTE/plugins/jquery-mapael/jquery.mapael.min.js') }} "></script>
-    <script src="{{ asset('Tema_LTE/plugins/jquery-mapael/maps/usa_states.min.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/jquery-mousewheel/jquery.mousewheel.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/raphael/raphael.min.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/jquery-mapael/jquery.mapael.min.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/jquery-mapael/maps/usa_states.min.js') }} "></script>
     <!-- ChartJS -->
-    <script src="{{ asset('Tema_LTE/plugins/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/chart.js/Chart.min.js') }}"></script>
 
     <!-- AdminLTE for demo purposes -->
-    <script src="{{ asset('Tema_LTE/dist/js/demo.js') }} "></script>
+    <script src="{{ secure_asset('Tema_LTE/dist/js/demo.js') }} "></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     {{-- <script src="{{ asset('Tema_LTE/dist/js/pages/dashboard2.js') }} "></script> --}}
 

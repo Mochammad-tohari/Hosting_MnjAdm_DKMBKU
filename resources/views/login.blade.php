@@ -13,13 +13,13 @@
     {{-- <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/plugins/fontawesome-free/css/all.min.css') }} ">
     "secure_asset" untuk menjalankan di NGROK --}}
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('Tema_LTE/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="{{ asset('Tema_LTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('Tema_LTE/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Tema_LTE/dist/css/adminlte.min.css') }}">
     <!-- Dark Mode styles -->
-    <link rel="stylesheet" href="{{ asset('public/Design/register&login.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('public/Design/register&login.css') }}">
 
     <!-- Web Icon (Favicon) -->
     <link rel="icon" type="image/x-icon" href="Tema_LTE/dist/img/Logo_Masjid.png">
@@ -177,11 +177,11 @@
     <!-- /.login-box -->
 
     <!-- jQuery -->
-    <script src="{{ asset('Tema_LTE/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
-    <script src="{{ asset('Tema_LTE/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('Tema_LTE/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="{{ asset('Tema_LTE/dist/js/adminlte.min.js') }}"></script>
+    <script src="{{ secure_asset('Tema_LTE/dist/js/adminlte.min.js') }}"></script>
     <!-- memanggil script toastr cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="

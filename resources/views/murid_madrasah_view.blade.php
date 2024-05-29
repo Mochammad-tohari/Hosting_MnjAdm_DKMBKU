@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <link href="{{ asset('Design/murid_madrasah_nametag.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('Design/murid_madrasah_nametag.css') }}" rel="stylesheet">
 
 </head>
 
@@ -27,7 +27,7 @@
                     <div class="card-body">
 
                         <div class="form-group row Foto_Murid">
-                            <img src="{{ asset('Data_Murid/Foto_Murid/' . $murid_madrasah_data->Foto_Murid) }}"
+                            <img src="{{ secure_asset('Data_Murid/Foto_Murid/' . $murid_madrasah_data->Foto_Murid) }}"
                                 alt="Foto_Murid">
                         </div>
 
@@ -72,7 +72,7 @@
 
 
     <!-- Import html2canvas script -->
-    <script src="{{ asset('js/html2canvas/html2canvas.js') }}"></script>
+    <script src="{{ secure_asset('js/html2canvas/html2canvas.js') }}"></script>
 
     <script>
         function takeScreenshot() {

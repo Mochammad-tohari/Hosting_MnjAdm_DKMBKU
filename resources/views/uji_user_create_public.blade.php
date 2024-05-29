@@ -20,8 +20,8 @@
 
                     <div class="card-header">
                         <div style="display: inline-flex; align-items: center;">
-                            <img src="{{ asset('box_info_image/Logo_Madrasah_DKMBKU.png') }}" style="width: 50px;"
-                                alt="Madrasah DKMBKU Logo">
+                            <img src="{{ secure_asset('box_info_image/Logo_Madrasah_DKMBKU.png') }}"
+                                style="width: 50px;" alt="Madrasah DKMBKU Logo">
                             <h3 class="card-title" style="margin-left: 10px;">Pendaftaran Uji User</h3>
                         </div>
                     </div>

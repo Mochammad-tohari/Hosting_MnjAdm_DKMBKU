@@ -19,11 +19,11 @@
                 <div class="card text-center" id="majlistalim-card" data-bs-theme="light">
                     <div class="card-header">
                         <div style="display: inline-flex; align-items: center;">
-                            <img src="{{ asset('icon_web/Logo_Masjid.png') }}" style="width: 50px;  margin-right: 10px;"
-                                alt="Logo_Masjid">
+                            <img src="{{ secure_asset('icon_web/Logo_Masjid.png') }}"
+                                style="width: 50px;  margin-right: 10px;" alt="Logo_Masjid">
                             <h3 class="card-title" style="margin-left: 10px;">Majlistalim DKMBKU</h3>
-                            <img src="{{ asset('icon_web/Logo_Nawa.png') }}" style="width: 40px;  margin-left: 10px;"
-                                alt="Logo_Masjid">
+                            <img src="{{ secure_asset('icon_web/Logo_Nawa.png') }}"
+                                style="width: 40px;  margin-left: 10px;" alt="Logo_Masjid">
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@
     <!-- Import html2canvas script -->
     {{-- src="{{ secure_asset('js/html2canvas/html2canvas.js') }}"
         "secure_asset agar bisa diakses di link "Https" atau di ngrok --}}
-    <script src="{{ asset('js/html2canvas/html2canvas.js') }}"></script>
+    <script src="{{ secure_asset('js/html2canvas/html2canvas.js') }}"></script>
 
 
     <script>
