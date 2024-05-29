@@ -1,0 +1,56 @@
+/* background image */
+
+.pengurus-dkm-card {
+    position: fixed;
+    background-image: url("../name_tag/pengurus_dkm_name_tag.jpg");
+    background-size: cover;
+    width: 95mm;
+    height: 140mm;
+    /* Center the content vertically and horizontally */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.card-body {
+    position: fixed;
+    /* Make the card body transparent so that the background image of the card is visible through it */
+    background-color: transparent;
+}
+
+/* content */
+
+.Foto_Pengurus_DKM img {
+    position: fixed;
+    /* Apply styles to the image if needed */
+    width: 110px;
+    /* Additional styles for the image */
+
+    margin-top: 40px; /* Increase this value to move the div down */
+    margin-bottom: 0px; /* Increase this value to move the div up */
+    margin-left: 118px; /* Increase this value to move the div to the right */
+    margin-right: 0px; /* Increase this value to move the div to the left */
+}
+
+#pengurus_dkm_table {
+    margin-top: 150px; /* Increase this value to move the div down */
+    margin-bottom: 0px; /* Increase this value to move the div up */
+    margin-left: 10px; /* Increase this value to move the div to the right */
+    margin-right: 0px; /* Increase this value to move the div to the left */
+}
+
+#Nama_Pengurus_DKM th {
+    color: #1705b0;
+}
+
+#Kode_Pengurus_DKM {
+    color: #2e2e2e;
+}
+
+#button_download {
+    position: fixed;
+    margin-top: 520px; /* Increase this value to move the div down */
+    margin-bottom: 0px; /* Increase this value to move the div up */
+    margin-left: 157px; /* Increase this value to move the div to the right */
+    margin-right: 0px; /* Increase this value to move the div to the left */
+}

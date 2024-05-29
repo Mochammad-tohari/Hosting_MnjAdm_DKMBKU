@@ -1,0 +1,50 @@
+/* background image */
+
+.gedung-card {
+    background-image: url("../tanda_info/Gedung_Tanda.png");
+    background-size: cover;
+    width: 205mm;
+    height: 100mm;
+
+    /* Editable positioning properties */
+    position: fixed;
+    margin-top: 50px; /* Increase this value to move the div down */
+    margin-bottom: 0px; /* Increase this value to move the div up */
+    margin-left: -150px; /* Increase this value to move the div to the right */
+    margin-right: 0px; /* Increase this value to move the div to the left */
+}
+
+.card-body {
+    position: fixed;
+    /* Make the card body transparent so that the background image of the card is visible through it */
+    background-color: transparent;
+}
+
+/* content */
+
+#gedung_table {
+    margin-top: 125px; /* Increase this value to move the div down */
+    margin-bottom: 0px; /* Increase this value to move the div up */
+    margin-left: 140px; /* Increase this value to move the div to the right */
+    margin-right: 0px; /* Increase this value to move the div to the left */
+}
+
+#Nama_Gedung th {
+    color: #0d0d0e;
+
+    font-size: 60px;
+}
+
+#Kode_Gedung th {
+    color: #444242;
+
+    font-size: 20px;
+}
+
+#button_download {
+    position: fixed;
+    margin-top: 450px; /* Increase this value to move the div down */
+    margin-bottom: 0px; /* Increase this value to move the div up */
+    margin-left: 212px; /* Increase this value to move the div to the right */
+    margin-right: 0px; /* Increase this value to move the div to the left */
+}
