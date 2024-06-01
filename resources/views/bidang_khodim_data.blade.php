@@ -56,11 +56,13 @@
         </div>
         @endif --}}
 
-                        <div class="col-auto">
-                            <form action="/bidang_khodim_data" method="GET">
-                                <a href="/bidang_khodim_export_pdf" class="btn btn-primary">Export PDF</button> </a>
-                            </form>
-                        </div>
+                        @if (auth()->user()->akses === 'Admin')
+                            <div class="col-auto">
+                                <form action="/bidang_khodim_data" method="GET">
+                                    <a href="/bidang_khodim_export_pdf" class="btn btn-primary">Export PDF</button> </a>
+                                </form>
+                            </div>
+                        @endif
 
                         {{-- css utk design table  --}}
                         <style>

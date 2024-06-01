@@ -59,11 +59,13 @@
                 </div>
                 @endif --}}
 
-                        <div class="col-auto">
-                            <form action="/murid_madrasah_data" method="GET">
-                                <a href="/murid_madrasah_export_pdf" class="btn btn-primary">Export PDF</button> </a>
-                            </form>
-                        </div>
+                        @if (auth()->user()->akses === 'Admin')
+                            <div class="col-auto">
+                                <form action="/murid_madrasah_data" method="GET">
+                                    <a href="/murid_madrasah_export_pdf" class="btn btn-primary">Export PDF</button> </a>
+                                </form>
+                            </div>
+                        @endif
 
                         {{-- css utk design table  --}}
                         <style>
