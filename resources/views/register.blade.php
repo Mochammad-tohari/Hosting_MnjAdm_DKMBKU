@@ -21,6 +21,8 @@
     <!-- Dark Mode styles -->
     <link rel="stylesheet" href="{{ secure_asset('public/Design/register&login.css') }}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Web Icon (Favicon) -->
     <link rel="icon" type="image/x-icon" href="Tema_LTE/dist/img/Logo_Masjid.png">
 
@@ -63,10 +65,11 @@
         .email,
         .password,
         .akses {
-            width: 100%;
+            width: 90%;
             border-bottom: 1px solid #a7a7a7;
             /* Underline border */
             margin-bottom: 20px;
+            margin-left: 20px;
             /* Add some spacing */
         }
 
@@ -107,6 +110,58 @@
         .modal {
             z-index: 1050;
             /* Adjust the z-index as needed */
+        }
+
+
+        .custom-select {
+            -webkit-appearance: none;
+            /* Remove default arrow in Chrome, Safari, and Opera */
+            -moz-appearance: none;
+            /* Remove default arrow in Firefox */
+            appearance: none;
+            /* Remove default arrow in other browsers */
+            padding-right: 30px;
+            /* Add some space for the arrow */
+            border: 1px solid #ccc;
+            /* Border style */
+            height: 40px;
+            /* Adjust the height */
+            line-height: 1.5;
+            /* Adjust line height */
+            font-size: 16px;
+            /* Font size */
+
+            /* Full width */
+        }
+
+        /* Style for the container */
+        .akses {
+            display: inline-block;
+            /* Align the container inline */
+            position: relative;
+            /* Positioning context for the arrow */
+
+            /* Adjust max width */
+        }
+
+        /* Position the Font Awesome icon */
+        .dropdown-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            /* Ensure it doesn't interfere with the select element */
+            font-size: 16px;
+            /* Adjust icon size */
+            color: #ccc;
+            /* Adjust icon color */
+        }
+
+        /* Optional: Style for the enabled placeholder option */
+        .custom-select option[enabled] {
+            color: #ccc;
+            /* Hide the placeholder option */
         }
     </style>
 
@@ -154,9 +209,8 @@
                     <option value="Admin">Admin</option>
                     <option value="Tamu">Tamu</option>
                 </select>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
             </div>
-
-
 
             <!-- /.col -->
             <div class="input-group mb-2">

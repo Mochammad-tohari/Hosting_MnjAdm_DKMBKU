@@ -28,6 +28,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
     <style>
         * {
@@ -135,6 +137,60 @@
             color: #ffffff;
             /* Text color for options */
         }
+
+        /* Basic styling for the select element */
+        .custom-select {
+            -webkit-appearance: none;
+            /* Remove default arrow in Chrome, Safari, and Opera */
+            -moz-appearance: none;
+            /* Remove default arrow in Firefox */
+            appearance: none;
+            /* Remove default arrow in other browsers */
+            padding-right: 30px;
+            /* Add some space for the arrow */
+            border: 1px solid #ccc;
+            /* Border style */
+            height: 40px;
+            /* Adjust the height */
+            line-height: 1.5;
+            /* Adjust line height */
+            font-size: 16px;
+            /* Font size */
+            width: 100%;
+            /* Full width */
+        }
+
+        /* Style for the container */
+        .akses {
+            display: inline-block;
+            /* Align the container inline */
+            position: relative;
+            /* Positioning context for the arrow */
+            width: 100%;
+            /* Full width */
+            max-width: 300px;
+            /* Adjust max width */
+        }
+
+        /* Position the Font Awesome icon */
+        .dropdown-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            /* Ensure it doesn't interfere with the select element */
+            font-size: 16px;
+            /* Adjust icon size */
+            color: #ccc;
+            /* Adjust icon color */
+        }
+
+        /* Optional: Style for the enabled placeholder option */
+        .custom-select option[enabled] {
+            color: #ccc;
+            /* Hide the placeholder option */
+        }
     </style>
 
 </head>
@@ -156,10 +212,11 @@
 
             <div class="akses">
                 <select class="custom-select rounded-0" id="akses" name="akses">
-                    <option disabled selected value="">Masuk Sebagai</option>
+                    <option disabled selected value="">Masuk Sebagai </option>
                     <option value="Admin">Admin</option>
                     <option value="Tamu">Tamu</option>
                 </select>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
             </div>
 
             <!-- /.col -->
