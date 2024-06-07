@@ -39,12 +39,13 @@ jadi segala tampilan yang masuk pada section ini akan ditamplkan sebagai bagian 
                         <a button type="button" class="btn btn-success" href="/uji_user_create"
                             style="margin-right: 10px;">Tambah Data (Admin)</button>
                         </a>
-                    @endif
 
-                    <a button type="button" class="btn btn-outline-info" href="/uji_user_create_public"
-                        target="_blank">Tambah Data
-                        (Untuk Umum)</button>
-                    </a>
+
+                        <a button type="button" class="btn btn-outline-info" href="/uji_user_create_public"
+                            target="_blank">Tambah Data
+                            (Untuk Umum)</button>
+                        </a>
+                    @endif
 
                     {{-- {{ Session::get('page_url') }} --}}
 
@@ -69,23 +70,25 @@ jadi segala tampilan yang masuk pada section ini akan ditamplkan sebagai bagian 
                             <form action="/uji_user_data_new" method="GET">
                             tag diatas bermaksud mendapatkan data dari laman
                             uji_user_data_new.blade.php --}}
-                        <div class="col-auto">
-                            <form action="/uji_user_data_new" method="GET">
-                                <a href="/uji_user_export_pdf" class="btn btn-primary">Export PDF</button> </a>
-                            </form>
-                        </div>
-                        {{-- akhir fungsi button untuk export semua data kedalam file PDF --}}
+                        @if (auth()->user()->akses === 'Admin')
+                            <div class="col-auto">
+                                <form action="/uji_user_data_new" method="GET">
+                                    <a href="/uji_user_export_pdf" class="btn btn-primary">Export PDF</button> </a>
+                                </form>
+                            </div>
+                            {{-- akhir fungsi button untuk export semua data kedalam file PDF --}}
 
 
-                        {{-- awal fungsi button untuk export semua data kedalam file Excel
+                            {{-- awal fungsi button untuk export semua data kedalam file Excel
                             <form action="/uji_user_data_new" method="GET">
                             tag diatas bermaksud mendapatkan data dari laman
                             uji_user_data_new.blade.php --}}
-                        <div class="col-auto">
-                            <form action="/uji_user_data_new" method="GET">
-                                <a href="/uji_user_excel_export" class="btn btn-success">Export Excel</button> </a>
-                            </form>
-                        </div>
+                            <div class="col-auto">
+                                <form action="/uji_user_data_new" method="GET">
+                                    <a href="/uji_user_excel_export" class="btn btn-success">Export Excel</button> </a>
+                                </form>
+                            </div>
+                        @endif
                         {{-- akhir fungsi button untuk export semua data kedalam file Excel --}}
 
 
@@ -149,6 +152,15 @@ jadi segala tampilan yang masuk pada section ini akan ditamplkan sebagai bagian 
                                 max-height: 500px;
                                 overflow-y: auto;
                                 margin-top: 20px;
+                                width: 100%;
+                                /* Ensure container takes up full width */
+                            }
+
+                            table.table-uji_user {
+                                width: 100%;
+                                /* Ensure table takes up full width */
+                                table-layout: auto;
+                                /* Let the table columns adjust dynamically */
                             }
 
                             table.table-uji_user thead {

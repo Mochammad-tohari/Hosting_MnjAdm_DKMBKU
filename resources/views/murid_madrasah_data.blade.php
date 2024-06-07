@@ -37,10 +37,12 @@
                         </a>
                     @endif
 
-                    <a button type="button" class="btn btn-outline-info" href="/murid_madrasah_create_public"
-                        target="_blank">Tambah Data
-                        (Untuk Umum)</button>
-                    </a>
+                    @if (auth()->user()->akses === 'Admin')
+                        <a button type="button" class="btn btn-outline-info" href="/murid_madrasah_create_public"
+                            target="_blank">Tambah Data
+                            (Untuk Umum)</button>
+                        </a>
+                    @endif
 
                     {{-- {{ Session::get('page_url') }} --}}
 
@@ -75,6 +77,15 @@
                                 max-height: 500px;
                                 overflow-y: auto;
                                 margin-top: 20px;
+                                width: 100%;
+                                /* Ensure container takes up full width */
+                            }
+
+                            table.table-murid-madrasah {
+                                width: 100%;
+                                /* Ensure table takes up full width */
+                                table-layout: auto;
+                                /* Let the table columns adjust dynamically */
                             }
 
                             table.table-murid-madrasah thead {

@@ -52,17 +52,19 @@
         </div>
         @endif --}}
 
-                        <div class="col-auto">
-                            <form action="/uji_bidang_data_new" method="GET">
-                                <a href="/uji_bidang_export_pdf" class="btn btn-primary">Export PDF</button> </a>
-                            </form>
-                        </div>
+                        @if (auth()->user()->akses === 'Admin')
+                            <div class="col-auto">
+                                <form action="/uji_bidang_data_new" method="GET">
+                                    <a href="/uji_bidang_export_pdf" class="btn btn-primary">Export PDF</button> </a>
+                                </form>
+                            </div>
 
-                        <div class="col-auto">
-                            <form action="/uji_bidang_data_new" method="GET">
-                                <a href="/export_excel_uji" class="btn btn-success">Export Excel</button> </a>
-                            </form>
-                        </div>
+                            <div class="col-auto">
+                                <form action="/uji_bidang_data_new" method="GET">
+                                    <a href="/export_excel_uji" class="btn btn-success">Export Excel</button> </a>
+                                </form>
+                            </div>
+                        @endif
 
                         <!-- Button trigger modal -->
                         @if (auth()->user()->akses === 'Admin')
@@ -119,6 +121,15 @@
                                 max-height: 500px;
                                 overflow-y: auto;
                                 margin-top: 20px;
+                                width: 100%;
+                                /* Ensure container takes up full width */
+                            }
+
+                            table.table-uji_bidang {
+                                width: 100%;
+                                /* Ensure table takes up full width */
+                                table-layout: auto;
+                                /* Let the table columns adjust dynamically */
                             }
 
                             table.table-uji_bidang thead {

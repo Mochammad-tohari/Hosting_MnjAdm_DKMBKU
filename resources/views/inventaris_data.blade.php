@@ -69,6 +69,15 @@
                                 max-height: 500px;
                                 overflow-y: auto;
                                 margin-top: 20px;
+                                width: 100%;
+                                /* Ensure container takes up full width */
+                            }
+
+                            table.table-inventaris {
+                                width: 100%;
+                                /* Ensure table takes up full width */
+                                table-layout: auto;
+                                /* Let the table columns adjust dynamically */
                             }
 
                             table.table-inventaris thead {
