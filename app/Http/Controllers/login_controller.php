@@ -50,6 +50,26 @@ class login_controller extends Controller
 
         return redirect('/login');
 
+        //??????????? Tanpa menggunakan input akses ??????????????????
+
+        // if(Auth::attempt($request->only('email','password','akses'))){
+        //     return redirect('/');
+        // }
+
+        //  $credentials = $request->only('email', 'password'); // Remove 'akses'
+
+        //  if (Auth::attempt($credentials)) {
+        //      $user = Auth::user();
+
+        //      // Redirect based on the detected role
+        //      return redirect()->intended('/')->with('success_login', 'Login Berhasil sebagai ' . $user->akses);
+        //  } else {
+        //      return back()->with('error_login', 'Data yang dimasukkan salah, Silahkan coba lagi.');
+        //  }
+
+
+        //??????????? End Tanpa menggunakan input akses ??????????????????
+
     }
 
     public function register()
